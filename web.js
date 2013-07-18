@@ -7,7 +7,8 @@ var app = express.createServer(express.logger());
 
 var file2str = function(filename){
   var data =  fs.readFileSync(filename);
-  return data.toString("utf-8",1,10);
+  var bufLen = data.length;
+return data.toString("utf-8",0, bufLen-1);
 
 }
 
