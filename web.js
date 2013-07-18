@@ -1,4 +1,5 @@
 var express = require('express');
+var fs = require('fs')
 
 var app = express.createServer(express.logger());
 
@@ -6,7 +7,7 @@ var app = express.createServer(express.logger());
 
 var file2str = function(filename){
   fs.readFileSync(filename);
-  return "Hello World 2!";
+  return "Hello World 3!";
 
 }
 
