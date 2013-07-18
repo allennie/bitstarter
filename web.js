@@ -6,8 +6,8 @@ var app = express.createServer(express.logger());
 //var buffer new Buffer("I am a string", "utf-8")
 
 var file2str = function(filename){
-  fs.readFileSync(filename);
-  return "Hello World 3!";
+  var data =  fs.readFileSync(filename);
+  return data;
 
 }
 
